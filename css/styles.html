@@ -11,14 +11,14 @@ header {
     color: #fff;
     padding: 10px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center the logo */
     align-items: center;
 }
 
 .logo img {
-    max-height: 60px; /* Reduce the max height */
-    max-width: 100%; /* Ensure the logo doesn't exceed screen width */
-    margin-left: 20px;
+    max-height: 40px; /* Further reduce the max height */
+    max-width: 100%; /* Ensure it scales correctly on all devices */
+    margin-left: 10px; /* Decrease margin for a tighter fit */
     width: auto;
     height: auto;
 }
@@ -73,7 +73,7 @@ footer {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .logo img {
-        max-height: 50px; /* Even smaller for smaller screens */
+        max-height: 40px; /* Further reduce max height for smaller screens */
         max-width: 80%; /* Ensure the logo fits well within the screen */
         margin-left: 10px;
     }
