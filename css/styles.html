@@ -16,7 +16,8 @@ header {
 }
 
 .logo img {
-    max-height: 100px;
+    max-height: 60px; /* Reduce the max height */
+    max-width: 100%; /* Ensure the logo doesn't exceed screen width */
     margin-left: 20px;
     width: auto;
     height: auto;
@@ -72,7 +73,8 @@ footer {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .logo img {
-        max-height: 80px;
+        max-height: 50px; /* Even smaller for smaller screens */
+        max-width: 80%; /* Ensure the logo fits well within the screen */
         margin-left: 10px;
     }
 
