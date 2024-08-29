@@ -11,14 +11,14 @@ header {
 }
 
 .logo img {
-    max-height: 40px; /* Further reduce height */
+    max-height: 10vh; /* Use viewport height for scaling */
     width: auto;
     height: auto;
     margin: 0 auto; 
 }
 
 .logo h1 {
-    font-size: 14px; /* Smaller font size */
+    font-size: 1rem; /* Use rem for relative sizing */
     margin: 0;
 }
 
@@ -33,29 +33,29 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 15px;
-    margin-bottom: 10px;
+    margin-right: 1rem; /* Use rem for spacing */
+    margin-bottom: 0.5rem;
 }
 
 nav ul li a img {
-    max-height: 30px; /* Further reduce button image size */
+    max-height: 5vh; /* Use viewport height for scaling */
     display: block;
 }
 
 /* Main Content Styling */
 main {
-    padding: 15px;
+    padding: 1rem;
     max-width: 900px; /* Smaller max width */
     margin: 0 auto;
     text-align: center;
 }
 
 .intro h1 {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .intro p {
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 /* Responsive adjustments for smaller screens */
@@ -65,11 +65,11 @@ main {
     }
 
     .logo img {
-        max-height: 30px;
+        max-height: 8vh; /* Adjust for smaller screens */
     }
 
     .logo h1 {
-        font-size: 12px;
+        font-size: 0.875rem; /* Smaller font size */
     }
 
     nav ul {
@@ -79,24 +79,24 @@ main {
 
     nav ul li {
         margin-right: 0;
-        margin-bottom: 8px;
+        margin-bottom: 0.5rem;
     }
 
     nav ul li a img {
-        max-height: 28px;
+        max-height: 4vh; /* Adjust for smaller screens */
     }
 
     main {
-        padding: 10px;
+        padding: 0.5rem;
         max-width: 100%;
     }
 
     .intro h1 {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .intro p {
-        font-size: 12px;
+        font-size: 0.875rem;
     }
 }
 
@@ -105,7 +105,7 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 20px;
+    padding: 0.5rem 1rem;
     position: static;
     width: 100%;
     bottom: 0;
