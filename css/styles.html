@@ -1,49 +1,6 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
-
-/* Home Page Background */
-body.home {
-    background-image: url('images/home_background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-/* About Us Page Background */
-body.about {
-    background-image: url('images/about_background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-/* Services Page Background */
-body.services {
-    background-image: url('images/services_background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-/* Contact Us Page Background */
-body.contact {
-    background-image: url('images/contact_background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-/* Header Styling */
+/* Further adjust the logo and header */
 header {
-    background-color: rgba(0, 68, 204, 0.8); /* Semi-transparent header */
+    background-color: rgba(0, 68, 204, 0.8); 
     color: #fff;
     padding: 10px;
     display: flex;
@@ -54,29 +11,15 @@ header {
 }
 
 .logo img {
-    max-height: 50px; /* Adjusted height for better mobile view */
+    max-height: 40px; /* Further reduce height */
     width: auto;
     height: auto;
-    margin: 0 auto; /* Center the logo */
+    margin: 0 auto; 
 }
 
 .logo h1 {
-    font-size: 18px; /* Smaller font size for mobile */
+    font-size: 14px; /* Smaller font size */
     margin: 0;
-}
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-    }
-
-    .logo img {
-        max-height: 40px; /* Further reduce size for smaller screens */
-    }
-
-    .logo h1 {
-        font-size: 16px; /* Adjust font size for better readability */
-    }
 }
 
 /* Navigation Styling */
@@ -90,57 +33,70 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 20px;
-    margin-bottom: 10px; /* Add space below for mobile view */
+    margin-right: 15px;
+    margin-bottom: 10px;
 }
 
 nav ul li a img {
-    max-height: 35px; /* Ensure button images are not too large */
+    max-height: 30px; /* Further reduce button image size */
     display: block;
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column; /* Stack buttons vertically on mobile */
-    }
-
-    nav ul li {
-        margin-right: 0; /* Remove right margin for stacked buttons */
-        margin-bottom: 10px;
-    }
-
-    nav ul li a img {
-        max-height: 30px; /* Further reduce button size for mobile */
-    }
 }
 
 /* Main Content Styling */
 main {
-    padding: 20px;
-    max-width: 1000px;
+    padding: 15px;
+    max-width: 900px; /* Smaller max width */
     margin: 0 auto;
     text-align: center;
 }
 
 .intro h1 {
-    font-size: 24px; /* Adjust title size for better visibility */
+    font-size: 20px;
 }
 
 .intro p {
-    font-size: 16px; /* Standardize text size */
+    font-size: 14px;
 }
 
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .logo img {
+        max-height: 30px;
+    }
+
+    .logo h1 {
+        font-size: 12px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    nav ul li a img {
+        max-height: 28px;
+    }
+
     main {
-        padding: 15px; /* Reduce padding for smaller screens */
+        padding: 10px;
+        max-width: 100%;
     }
 
     .intro h1 {
-        font-size: 20px; /* Adjust title size for mobile */
+        font-size: 18px;
     }
 
     .intro p {
-        font-size: 14px; /* Adjust paragraph size for mobile */
+        font-size: 12px;
     }
 }
 
