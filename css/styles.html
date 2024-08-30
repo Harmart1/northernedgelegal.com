@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
 header {
@@ -11,32 +11,28 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    position: relative;
-    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header .logo img {
-    height: 60px; /* Slightly larger logo for better emphasis */
+    height: 50px;
     width: auto;
     vertical-align: middle;
 }
 
 header h1 {
-    display: inline-block;
-    margin-left: 15px;
-    vertical-align: middle;
-    font-size: 28px; /* Slightly larger font for a more prominent title */
+    font-size: 24px;
+    margin-top: 10px;
 }
 
 nav {
     text-align: center;
-    padding: 15px 0;
+    padding: 10px;
     background-color: #333;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 1000;
 }
 
 nav ul {
@@ -48,7 +44,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav ul li a {
@@ -62,16 +58,15 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #0044cc;
-    transform: scale(1.05); /* Slight scale effect on hover */
 }
 
 main {
-    padding: 40px 20px;
-    max-width: 1200px;
+    padding: 20px;
+    max-width: 1000px;
     margin: 0 auto;
-    background-color: #f4f4f4;
+    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for the main content area */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 section {
@@ -84,14 +79,12 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
-    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on top */
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
     header h1 {
-        display: block;
-        margin-top: 10px;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     nav ul {
@@ -106,10 +99,9 @@ footer {
     nav ul li a {
         display: block;
         margin: 5px auto;
-        width: 80%;
     }
 
     main {
-        padding: 20px;
+        padding: 10px;
     }
 }
